@@ -1,4 +1,5 @@
 import React, { useRef }  from "react";
+import './Layout.css'
 import Sidebar from "../../components/sidebar/Sidebar";
 import Home from "../../components/home/Home";
 import About from "../../components/about/About";
@@ -13,7 +14,7 @@ export default function Layout() {
     <div className="main-container">
       <div className='row no-gutters'>
         <Scroll />
-        <div className="col-lg-2 position-fixed">
+        <div className="sidebar col-lg-2 position-fixed">
           <Sidebar />
         </div>
         <div className='col-lg-10 offset-2 pages'>
