@@ -1,4 +1,4 @@
-import React, { useRef }  from "react";
+import React  from "react";
 import './Layout.css'
 import Sidebar from "../../components/sidebar/Sidebar";
 import Home from "../../components/home/Home";
@@ -9,7 +9,6 @@ import Skills from "../../components/skills/Skills";
 import Scroll from "../../components/scrollComponent/Scroll";
 
 export default function Layout() {
-  const aboutSection = useRef(null);
   return (
     <div className="main-container">
       <div className='row no-gutters'>
@@ -20,9 +19,9 @@ export default function Layout() {
         <div className='col-lg-10 offset-2 pages'>
           <Home />
           <About />
-          {/* <Experience />
+          <Experience />
           <Education />
-          <Skills /> */}
+          <Skills />
         </div>
       </div>
     </div>

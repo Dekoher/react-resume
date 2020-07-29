@@ -3,7 +3,7 @@ import './Skills.css'
 
 export default function Skills() {
   return (
-    <div className='main-container'>
+    <div id='skills' className='skills-container'>
       
     </div>
   )

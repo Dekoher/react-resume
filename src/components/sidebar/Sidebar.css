@@ -1,7 +1,8 @@
 .picture {
   display: flex;
   justify-content: center;
-  padding: 15%;
+  padding-bottom: 15%;
+  padding-top: 10%;
 }
 
 .picture img {
@@ -25,6 +26,12 @@
 
 .navigation li {
   list-style: none;
+}
+
+.navigation button {
+  border: none;
+  background: none;
+  line-height: initial;
 }
 
 .icons {
