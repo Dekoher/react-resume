@@ -1,13 +1,19 @@
+.sidebar-container {
+  height: 100vh;
+  overflow: auto;
+}
+
 .picture {
   display: flex;
   justify-content: center;
-  padding-bottom: 15%;
-  padding-top: 10%;
+  width: 100%;
+  height: auto;
+  padding-top: 64px;
 }
 
 .picture img {
-  width: 150px;
-  height: 175px;
+  height: 185px;
+  width: 170px;
   border-radius: 50%;
 }
 
@@ -16,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .navigation ul {
@@ -42,8 +49,6 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   padding: 5%;
   text-align: center;
 }
@@ -51,4 +56,25 @@
 .footer p {
   margin: 0;
   font-size: 14px;
+}
+
+.footer span {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media screen and (min-height: 700px) {
+  .sidebar-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  .picture {
+    padding-top: 96px;
+  }
+
+  .icons {
+    font-size: 35px;
+  }
 }
