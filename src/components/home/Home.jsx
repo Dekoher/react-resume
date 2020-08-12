@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
         <a
           href="https://drive.google.com/file/d/1ZabtvydpHzEjuMjq629AIqAr7yo4LNna/view?usp=sharing"
-          className="btn btn-light"
+          className="cvbutton"
         >
           Download CV<i className="fas fa-cloud-download-alt"></i>
         </a>

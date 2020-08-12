@@ -1,8 +1,8 @@
 import React  from "react";
 import './Layout.css'
 import Sidebar from "../../components/sidebar/Sidebar";
-// import Home from "../../components/home/Home";
-// import About from "../../components/about/About";
+import Home from "../../components/home/Home";
+import About from "../../components/about/About";
 // import Experience from "../../components/experience/Experience";
 // import Education from "../../components/education/Education";
 // import Skills from "../../components/skills/Skills";
@@ -11,10 +11,14 @@ import Scroll from "../../components/scrollComponent/Scroll";
 export default function Layout() {
   const openSidebar = event => {
     const sidebar = document.querySelector('.sidebar');
+    const hamburger = document.querySelector('.hamburger');
+    console.log(hamburger);
     if (sidebar.classList.contains('open')) {
       sidebar.classList.remove('open');
+      hamburger.style.color = '#fff';
     } else {
       sidebar.classList.add('open');
+      hamburger.style.color = '#000';
     }
   };
   return (
@@ -25,13 +29,13 @@ export default function Layout() {
         <Sidebar />
       </aside>
       <div className='pages'>
+        <Home />
+        <About />
       </div>
         {/* <div className="sidebar col-lg-2 position-fixed">
           <Sidebar />
         </div>
         <div className='col-lg-10 offset-2 pages'>
-          <Home />
-          <About />
           <Experience />
           <Education />
           <Skills />
