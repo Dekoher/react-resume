@@ -6,9 +6,11 @@ export default function About() {
   return (
     <section id="about" className="about-container">
       <article className="aboutcard">
-        <img className="headerimage" src={uno} alt="myself" />
+        <div>
+          <img className="headerimage" src={uno} alt="myself" />
+        </div>
         <div className="abouttext">
-          <h1>WHO AM I?</h1>
+          <h1>Who am I?</h1>
           <p>
             I am a Frontend Developer with 2 years of experience working with
             cutting-edges technologies like Angular 8+ and ReactJs for the

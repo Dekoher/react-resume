@@ -60,7 +60,7 @@ export default function Sidebar() {
           <span role="img" aria-label="icon">
             ❤️
           </span>
-          and
+          , <i class="fab fa-react"></i> & 
           <span role="img" aria-label="icon">
             🍺
           </span>
