@@ -1,6 +1,5 @@
 import React from "react";
 import "./Sidebar.css";
-import once from "../../assets/once.jpeg";
 
 export default function Sidebar() {
   const getOffsetTop = (section) => {
@@ -10,7 +9,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className="picture">
-        <img src={once} alt="diegoher" />
+        <div className='image'></div>
       </div>
       <div className="description">
         <h3>Diego Herrera</h3>
@@ -60,7 +59,7 @@ export default function Sidebar() {
           <span role="img" aria-label="icon">
             ❤️
           </span>
-          , <i class="fab fa-react"></i> & 
+          , <i className="fab fa-react"></i> & 
           <span role="img" aria-label="icon">
             🍺
           </span>

@@ -3,7 +3,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div id='home' className="home-container">
+    <section id='home' className="home-container">
       <div className="background"></div>
       <div className="text">
         <h1>
@@ -21,6 +21,6 @@ export default function Home() {
           Download CV<i className="fas fa-cloud-download-alt"></i>
         </a>
       </div>
-    </div>
+    </section>
   );
 }

@@ -4,17 +4,17 @@
 }
 
 .picture {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
   padding-top: 64px;
 }
 
-.picture img {
-  height: 185px;
-  width: 170px;
+.picture .image {
   border-radius: 50%;
+  height: 250px;
+  margin: 5% 10% 5% 10%;
+  background-image: url(../../assets/once.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% center;
 }
 
 .description {
@@ -71,7 +71,14 @@
   }
 
   .picture {
-    padding-top: 96px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20%;
+  }
+
+  .picture .image {
+    margin: 0;
+    height: 300px;
   }
 
   .icons {

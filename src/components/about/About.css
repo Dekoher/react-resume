@@ -1,20 +1,22 @@
 .about-container {
   height: auto;
-  padding: 3%;
-  background-color: #f5f5f8;
+  padding: 5%;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 30px;
 }
 
 .aboutcard {
-  /* border-radius: 10px 10px 0 0; */
-  background-color: #fff;
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.7);
-  /* border-radius: 10px 10px 0 0; */
+  border: 1px solid #dcdcdc;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .headerimage {
   width: 100%;
   height: auto;
-  /* border-radius: 10px 10px 0 0; */
+  border-radius: 10px 10px 0 0;
 }
 
 .abouttext {
@@ -22,19 +24,28 @@
   padding: 5%;
 }
 
+.abouttext p {
+  margin: 0;
+}
+
 @media screen and (min-width: 1024px) {
   .about-container {
     height: auto;
     background: none;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0;
+    margin-bottom: 3%;
   }
 
+  .title {
+    font-size: 40px;
+  }
+  
   .aboutcard {
+    padding: 3%;
     display: flex;
     align-items: center;
-    background: none;
-    box-shadow: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
   }
 
   .headerimage {
